@@ -7,7 +7,7 @@ services:
       networks:
         - custom-net
       ports:
-       - "0.0.0.0:9515:9515"
+       - "0.0.0.0:19515:9515"
 
 networks:
   custom-net:
