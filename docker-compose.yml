@@ -2,12 +2,12 @@ version: '3'
 services:
 
   chromedriver:
-    build: .
-    container_name: "chrome-headless"
-    networks:
-      - custom-net
-    ports:
-      - "0.0.0.0:9515:9515"
+      build: .
+      container_name: "chrome-headless"
+      networks:
+        - custom-net
+      ports:
+       - "0.0.0.0:9515:9515"
 
 networks:
   custom-net:
