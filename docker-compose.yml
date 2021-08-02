@@ -4,12 +4,5 @@ services:
   chromedriver:
       build: .
       container_name: "chrome-headless"
-      networks:
-        - custom-net
       ports:
        - "0.0.0.0:19515:9515"
-
-networks:
-  custom-net:
-    external:
-      name: custom-net
